@@ -1,178 +1,477 @@
----
-title: Privacy Policy
-description: Privacy Policy for the Sheikh Mahad Gurey mobile application
----
-
-# Privacy Policy for Sheikh Mahad Gurey
-
-**Effective Date:** 21 July 2026  
-**Last Updated:** 21 July 2026
-
-The Sheikh Mahad Gurey application respects the privacy of its users. This Privacy Policy explains how information is handled when users access and use the **Sheikh Mahad Gurey** mobile application.
-
----
-
-## 1. About the Application
-
-**Sheikh Mahad Gurey** is an Islamic educational mobile application featuring Quranic Tafsir lessons and audio recordings by Sheikh Mahad Gurey, a Somali Islamic scholar.
-
-The application allows users to browse, read, download available content, and listen to Islamic educational materials.
-
----
-
-## 2. Personal Information
-
-The application does not require users to create an account, register, or sign in.
-
-The application does not directly collect personal information such as:
-
-- Names
-- Email addresses
-- Phone numbers
-- Physical addresses
-- Contact lists
-- Photos or personal files
-- Precise location
-- Financial or payment information
-
-We do not sell, rent, trade, or use personal information for advertising or marketing purposes.
-
----
-
-## 3. Internet Access and Content Delivery
-
-The application may use an internet connection to retrieve Quranic Tafsir audio recordings, images, and related educational content from cloud-hosted storage.
-
-Application content may be delivered through **Cloudflare R2** or similar content-hosting infrastructure.
-
-Cloud hosting providers and internet service providers may automatically process limited technical information when delivering content, such as:
-
-- IP addresses
-- Network request information
-- Device connection information
-- Request dates and times
-
-This technical information may be processed only as necessary to securely host and deliver application content.
-
-The application does not use this information for advertising, behavioural profiling, or user tracking.
-
----
-
-## 4. Information Stored on the Device
-
-The application may store limited information locally on the user’s device, including:
-
-- Downloaded audio lessons
-- Cached audio and images
-- Bookmarked lessons
-- Listening progress
-- Playback preferences
-- Application settings
-
-This information is stored locally to support the application’s functionality and improve the user experience.
-
-Locally stored information is not transmitted to the developer’s servers.
-
-Users may remove locally stored information by:
-
-- Deleting downloaded content
-- Clearing the application’s storage or cache
-- Resetting the application
-- Uninstalling the application
-
----
-
-## 5. Advertising
-
-The application does not display third-party advertisements.
-
-The application does not use personal information for advertising, targeted advertising, or promotional profiling.
-
----
-
-## 6. Analytics and Tracking
-
-The current version of the application does not use:
-
-- Advertising trackers
-- Behavioural tracking technologies
-- User profiling systems
-- Third-party advertising analytics
-
-The application does not track users across other applications or websites.
-
-If analytics or tracking technologies are introduced in a future version, this Privacy Policy will be updated before those services are used.
-
----
-
-## 7. Data Sharing
-
-The application does not sell, rent, or share users’ personal information with third parties.
-
-Technical service providers may process limited network information only when necessary to:
-
-- Host application content
-- Deliver audio and images
-- Maintain service security
-- Prevent abuse
-- Ensure reliable content delivery
-
-No user information is shared for advertising or marketing purposes.
-
----
-
-## 8. Data Security
-
-Reasonable technical measures are used to protect the application and its content.
-
-Where supported, application content is delivered through secure and encrypted network connections.
-
-However, no method of internet transmission or electronic storage can be guaranteed to be completely secure.
-
----
-
-## 9. Children’s Privacy
-
-The application does not knowingly collect personal information from any users, including children.
-
-Users can access the application’s educational content without creating an account or submitting personal information.
-
-Parents or guardians who believe that personal information has been submitted through the application may contact the developer using the details provided below.
-
----
-
-## 10. Data Retention and Deletion
-
-The application does not maintain a central user account database.
-
-Locally stored application information remains on the user’s device until the user:
-
-- Deletes the downloaded content
-- Clears the application data
-- Resets the application
-- Uninstalls the application
-
-Information temporarily processed by content-hosting providers may be retained according to those providers’ security and operational policies.
-
----
-
-## 11. Changes to This Privacy Policy
-
-This Privacy Policy may be updated when:
-
-- Application features change
-- New services are introduced
-- Data-handling practices change
-- Legal or platform requirements change
-
-Any revised version will be published on this page with an updated effective date.
-
----
-
-## 12. Contact Us
-
-For questions, concerns, or requests regarding this Privacy Policy, contact:
-
-**Developer/Publisher:** Heelan Technology  
-**Support Email:** heellotechga@gmail.com  
-**Application:** Sheikh Mahad Gurey
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Privacy Policy | Sheikh Mahad Gurey</title>
+
+  <meta
+    name="description"
+    content="Privacy Policy for the Sheikh Mahad Gurey mobile application."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Arial, sans-serif;
+      background: #f5f7f9;
+      color: #263238;
+      line-height: 1.75;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #123f37, #1d6255);
+      color: white;
+      padding: 64px 20px 82px;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 7px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.32);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.09);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      max-width: 850px;
+      margin: 0 auto 14px;
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1.2;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 17px;
+    }
+
+    .container {
+      width: min(920px, calc(100% - 32px));
+      margin: -42px auto 50px;
+    }
+
+    .policy-card {
+      padding: 48px;
+      border: 1px solid #e4e9e7;
+      border-radius: 18px;
+      background: white;
+      box-shadow: 0 18px 50px rgba(19, 63, 55, 0.09);
+    }
+
+    .date-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px 30px;
+      margin-bottom: 35px;
+      padding: 18px 20px;
+      border-left: 4px solid #b59443;
+      border-radius: 8px;
+      background: #f8f6ef;
+      color: #4b4b42;
+      font-size: 14px;
+    }
+
+    h2 {
+      margin-top: 42px;
+      margin-bottom: 13px;
+      color: #123f37;
+      font-size: 23px;
+      line-height: 1.35;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    ul {
+      margin: 10px 0 22px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 7px;
+    }
+
+    a {
+      color: #176b5a;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-box {
+      margin-top: 22px;
+      padding: 24px;
+      border: 1px solid #dfe8e5;
+      border-radius: 12px;
+      background: #f7faf9;
+    }
+
+    .contact-row {
+      margin-bottom: 9px;
+    }
+
+    .contact-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .footer {
+      padding: 0 20px 35px;
+      text-align: center;
+      color: #687572;
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding-top: 48px;
+        padding-bottom: 70px;
+      }
+
+      .container {
+        width: min(100% - 20px, 920px);
+      }
+
+      .policy-card {
+        padding: 28px 22px;
+        border-radius: 14px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-badge">Sheikh Mahad Gurey</div>
+
+    <h1>Privacy Policy</h1>
+
+    <p>
+      This Privacy Policy explains how information is handled when
+      users access and use the Sheikh Mahad Gurey mobile application.
+    </p>
+  </header>
+
+  <main class="container">
+    <article class="policy-card">
+
+      <div class="date-box">
+        <div><strong>Effective Date:</strong> 21 July 2026</div>
+        <div><strong>Last Updated:</strong> 21 July 2026</div>
+      </div>
+
+      <p>
+        The Sheikh Mahad Gurey application respects the privacy of its
+        users. This Privacy Policy explains how information is handled
+        when users access and use the
+        <strong>Sheikh Mahad Gurey</strong> mobile application.
+      </p>
+
+      <h2>1. About the Application</h2>
+
+      <p>
+        <strong>Sheikh Mahad Gurey</strong> is an Islamic educational
+        mobile application featuring Quranic Tafsir lessons and audio
+        recordings by Sheikh Mahad Gurey, a Somali Islamic scholar.
+      </p>
+
+      <p>
+        The application allows users to browse, read, download available
+        content, and listen to Islamic educational materials.
+      </p>
+
+      <h2>2. Personal Information</h2>
+
+      <p>
+        The application does not require users to create an account,
+        register, or sign in.
+      </p>
+
+      <p>
+        The application does not directly collect personal information
+        such as:
+      </p>
+
+      <ul>
+        <li>Names</li>
+        <li>Email addresses</li>
+        <li>Phone numbers</li>
+        <li>Physical addresses</li>
+        <li>Contact lists</li>
+        <li>Photos or personal files</li>
+        <li>Precise location</li>
+        <li>Financial or payment information</li>
+      </ul>
+
+      <p>
+        We do not sell, rent, trade, or use personal information for
+        advertising or marketing purposes.
+      </p>
+
+      <h2>3. Internet Access and Content Delivery</h2>
+
+      <p>
+        The application may use an internet connection to retrieve
+        Quranic Tafsir audio recordings, images, and related educational
+        content from cloud-hosted storage.
+      </p>
+
+      <p>
+        Application content may be delivered through
+        <strong>Cloudflare R2</strong> or similar content-hosting
+        infrastructure.
+      </p>
+
+      <p>
+        Cloud hosting providers and internet service providers may
+        automatically process limited technical information when
+        delivering content, such as:
+      </p>
+
+      <ul>
+        <li>IP addresses</li>
+        <li>Network request information</li>
+        <li>Device connection information</li>
+        <li>Request dates and times</li>
+      </ul>
+
+      <p>
+        This technical information may be processed only as necessary
+        to securely host and deliver application content.
+      </p>
+
+      <p>
+        The application does not use this information for advertising,
+        behavioural profiling, or user tracking.
+      </p>
+
+      <h2>4. Information Stored on the Device</h2>
+
+      <p>
+        The application may store limited information locally on the
+        user’s device, including:
+      </p>
+
+      <ul>
+        <li>Downloaded audio lessons</li>
+        <li>Cached audio and images</li>
+        <li>Bookmarked lessons</li>
+        <li>Listening progress</li>
+        <li>Playback preferences</li>
+        <li>Application settings</li>
+      </ul>
+
+      <p>
+        This information is stored locally to support the application’s
+        functionality and improve the user experience.
+      </p>
+
+      <p>
+        Locally stored information is not transmitted to the developer’s
+        servers.
+      </p>
+
+      <p>Users may remove locally stored information by:</p>
+
+      <ul>
+        <li>Deleting downloaded content</li>
+        <li>Clearing the application’s storage or cache</li>
+        <li>Resetting the application</li>
+        <li>Uninstalling the application</li>
+      </ul>
+
+      <h2>5. Advertising</h2>
+
+      <p>
+        The application does not display third-party advertisements.
+      </p>
+
+      <p>
+        The application does not use personal information for advertising,
+        targeted advertising, or promotional profiling.
+      </p>
+
+      <h2>6. Analytics and Tracking</h2>
+
+      <p>The current version of the application does not use:</p>
+
+      <ul>
+        <li>Advertising trackers</li>
+        <li>Behavioural tracking technologies</li>
+        <li>User profiling systems</li>
+        <li>Third-party advertising analytics</li>
+      </ul>
+
+      <p>
+        The application does not track users across other applications
+        or websites.
+      </p>
+
+      <p>
+        If analytics or tracking technologies are introduced in a future
+        version, this Privacy Policy will be updated before those services
+        are used.
+      </p>
+
+      <h2>7. Data Sharing</h2>
+
+      <p>
+        The application does not sell, rent, or share users’ personal
+        information with third parties.
+      </p>
+
+      <p>
+        Technical service providers may process limited network
+        information only when necessary to:
+      </p>
+
+      <ul>
+        <li>Host application content</li>
+        <li>Deliver audio and images</li>
+        <li>Maintain service security</li>
+        <li>Prevent abuse</li>
+        <li>Ensure reliable content delivery</li>
+      </ul>
+
+      <p>
+        No user information is shared for advertising or marketing
+        purposes.
+      </p>
+
+      <h2>8. Data Security</h2>
+
+      <p>
+        Reasonable technical measures are used to protect the application
+        and its content.
+      </p>
+
+      <p>
+        Where supported, application content is delivered through secure
+        and encrypted network connections.
+      </p>
+
+      <p>
+        However, no method of internet transmission or electronic storage
+        can be guaranteed to be completely secure.
+      </p>
+
+      <h2>9. Children’s Privacy</h2>
+
+      <p>
+        The application does not knowingly collect personal information
+        from any users, including children.
+      </p>
+
+      <p>
+        Users can access the application’s educational content without
+        creating an account or submitting personal information.
+      </p>
+
+      <p>
+        Parents or guardians who believe that personal information has
+        been submitted through the application may contact the developer
+        using the details provided below.
+      </p>
+
+      <h2>10. Data Retention and Deletion</h2>
+
+      <p>
+        The application does not maintain a central user account database.
+      </p>
+
+      <p>
+        Locally stored application information remains on the user’s
+        device until the user:
+      </p>
+
+      <ul>
+        <li>Deletes downloaded content</li>
+        <li>Clears the application data</li>
+        <li>Resets the application</li>
+        <li>Uninstalls the application</li>
+      </ul>
+
+      <p>
+        Information temporarily processed by content-hosting providers
+        may be retained according to those providers’ security and
+        operational policies.
+      </p>
+
+      <h2>11. Changes to This Privacy Policy</h2>
+
+      <p>This Privacy Policy may be updated when:</p>
+
+      <ul>
+        <li>Application features change</li>
+        <li>New services are introduced</li>
+        <li>Data-handling practices change</li>
+        <li>Legal or platform requirements change</li>
+      </ul>
+
+      <p>
+        Any revised version will be published on this page with an updated
+        effective date.
+      </p>
+
+      <h2>12. Contact Us</h2>
+
+      <p>
+        For questions, concerns, or requests regarding this Privacy Policy,
+        contact:
+      </p>
+
+      <div class="contact-box">
+        <div class="contact-row">
+          <strong>Developer/Publisher:</strong> Heelan Technology
+        </div>
+
+        <div class="contact-row">
+          <strong>Support Email:</strong>
+          <a href="mailto:heellotechga@gmail.com">
+            heellotechga@gmail.com
+          </a>
+        </div>
+
+        <div class="contact-row">
+          <strong>Application:</strong> Sheikh Mahad Gurey
+        </div>
+      </div>
+
+    </article>
+  </main>
+
+  <footer class="footer">
+    © 2026 Heelan Technology. All rights reserved.
+  </footer>
+</body>
+</html>
